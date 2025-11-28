@@ -1,0 +1,40 @@
+{
+  "tech_stack": [
+    "TypeScript",
+    "Next.js 14 (App Router)",
+    "Static (no database)",
+    "Tailwind CSS, Framer Motion, Swiper, EmailJS, Google Apps Script webhook"
+  ],
+  "features": [
+    {
+      "name": "Homepage Layout",
+      "description": "Hero slider with particles, CTA, trusted brands, services and testimonial sections",
+      "files": ["app/page.tsx", "app/components/HeroSlider.tsx", "app/components/TrustedBrands.tsx", "app/components/CTASection.tsx"]
+    },
+    {
+      "name": "Shared SEO",
+      "description": "Utility component to add meta tags and structured data in layouts and pages",
+      "files": ["app/components/SharedSEO.tsx", "app/layout.tsx"]
+    },
+    {
+      "name": "Contact Form",
+      "description": "Client-side form that submits via EmailJS and Google Apps Script while providing user feedback",
+      "files": ["app/components/ContactForm.tsx"]
+    },
+    {
+      "name": "Services Directory",
+      "description": "Service detail pages with cards, dynamic CTA sections, and navigation",
+      "files": ["app/services/page.tsx", "app/services/network/page.tsx", "app/services/telecom/page.tsx", "app/components/ServiceCard.tsx"]
+    },
+    {
+      "name": "Footer & Header",
+      "description": "Global layout navigation, service dropdown, contact CTA, and footer with social/links",
+      "files": ["app/components/Header.tsx", "app/components/Footer.tsx"]
+    },
+    {
+      "name": "Data Center CTA",
+      "description": "Prominent data center call-to-action on related service pages",
+      "files": ["app/components/DataCenterCTA.tsx", "app/services/datacenter/page.tsx"]
+    }
+  ]
+}

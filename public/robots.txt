@@ -1,0 +1,12 @@
+# robots.txt for Vantara Network Solutions
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+# REPLACE https://vantaranetwork.com with your actual domain
+Sitemap: https://vantaranetwork.com/sitemap.xml
+
+# Disallow admin or private paths (if any)
+# Disallow: /admin/
+# Disallow: /private/

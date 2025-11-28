@@ -1,0 +1,15 @@
+{
+  "status": "commited",
+  "type": "frontend",
+  "scope": "codebase",
+  "localEndpoint": "http://localhost:3001",
+  "executionArgs": {
+    "projectName": "Vantara",
+    "projectPath": "e:/Websites/Vantara",
+    "testIds": [],
+    "additionalInstruction": "Run full website QA per user checklist (Home, services, products, data center, migration, security, telecom, repair & support, contact, careers, blog if present) covering navigation, forms, analytics, SEO, accessibility, performance, security. Start with smoke tests (home load, nav, contact form). Use TestSprite toolkit to capture console logs, network, forms (including Google Apps Script POST). Include cross-browser/responsive checks for listed viewport sizes and browsers if possible, and document issues found. Provide CSV/JSON summary and PDF/HTML for P0/P1 with screenshots.",
+    "envs": {
+      "API_KEY": "sk-user-q3JG4UTIiMnaBfBvfI5SgmE4Su6C5SGgT9m7EpCVKeen9CMxr9TB9pEk0o9bJQM3kf6-dB-PQFTE2icAX3nQU4DMfpSX-KvNIakC3gP_eHmGtG8zMFohzpoy30Axj_dUY6Y"
+    }
+  }
+}
