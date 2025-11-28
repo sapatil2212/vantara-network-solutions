@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { FiArrowRight } from 'react-icons/fi'
+import { ArrowRight } from 'lucide-react'
 
 export default function HardwareCTA() {
   return (
@@ -28,10 +28,10 @@ export default function HardwareCTA() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Link 
                 href="/contact" 
-                className="bg-white text-vantara px-8 py-4 rounded-full font-bold text-lg shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300 flex items-center gap-2"
+                className="group/btn inline-flex items-center justify-center gap-2 bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-700 hover:to-blue-600 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 shadow-lg hover:shadow-blue-500/50 transform hover:scale-105"
               >
                 Get Started
-                <FiArrowRight className="w-5 h-5" />
+                <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover/btn:translate-x-1" />
               </Link>
             </div>
           </div>

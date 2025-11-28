@@ -57,7 +57,7 @@ export default function HeroSlider() {
   }, [])
 
   return (
-    <div className="relative min-h-screen">
+    <div className="relative min-h-[50vh] md:min-h-screen">
       {/* Hero Slider */}
       <Swiper
         modules={[Navigation, Pagination, Autoplay, EffectFade]}
@@ -67,7 +67,7 @@ export default function HeroSlider() {
         effect="fade"
         loop
         onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
-        className="h-screen z-10 relative hero-swiper group"
+        className="h-[50vh] md:h-screen z-10 relative hero-swiper group"
       >
         {slides.map((slide, index) => (
           <SwiperSlide key={index}>
@@ -121,10 +121,7 @@ export default function HeroSlider() {
                           Get a Consultation
                           <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover/btn:translate-x-1" />
                         </Link>
-                        <Link href="/services" className="group/btn relative inline-flex items-center justify-center gap-2 bg-white/10 backdrop-blur-sm border border-white text-white hover:bg-white hover:text-vantara text-center text-sm sm:text-base px-6 sm:px-8 py-3 sm:py-3.5 rounded-lg font-semibold transition-all duration-300">
-                          Explore Services
-                          <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover/btn:translate-x-1" />
-                        </Link>
+                        
                       </AnimatedText>
                     </>
                   )}

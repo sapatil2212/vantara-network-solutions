@@ -66,16 +66,16 @@ export default function HowWeWork() {
 
         {/* Process Steps – Horizontal Cards */}
         <div className="mb-12">
-          <div className="relative rounded-3xl bg-white/70 shadow-[0_18px_45px_rgba(15,23,42,0.05)] border border-gray-200/70 p-8 overflow-x-auto">
-            <div className="flex gap-0 divide-x divide-gray-200/70">
+          <div className="relative rounded-3xl bg-white/70 shadow-[0_18px_45px_rgba(15,23,42,0.05)] border border-gray-200/70 p-4 md:p-8">
+            <div className="flex flex-col md:flex-row gap-4 md:gap-0 md:divide-x divide-gray-200/70">
               {processSteps.map((step, index) => (
                 <div
                   key={index}
                   onMouseEnter={() => setActiveStep(index)}
                   onMouseLeave={() => setActiveStep(null)}
                   className={`
-                    flex-1 px-6 py-4
-                    transition-all duration-300
+                    flex-1 px-4 md:px-6 py-4
+                    transition-all duration-300 rounded-lg
                     ${activeStep === index ? 'bg-vantara/3' : 'bg-transparent'}
                   `}
                 >
@@ -116,27 +116,27 @@ export default function HowWeWork() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:divide-x md:divide-gray-200">
               <div className="text-center md:px-6">
                 <div className="w-20 h-20 bg-vantara/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-3xl font-bold text-vantara">100%</span>
+                  <span className="text-2xl sm:text-3xl font-bold text-vantara">100%</span>
                 </div>
-                <h4 className="font-bold text-gray-900 mb-2 text-2xl">Transparent Process</h4>
+                <h4 className="font-bold text-gray-900 mb-2 text-md sm:text-2xl">Transparent Process</h4>
                 <p className="text-gray-600 text-sm">
                   Complete visibility at every stage of your project
                 </p>
               </div>
               <div className="text-center md:px-6">
                 <div className="w-20 h-20 bg-vantara/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-3xl font-bold text-vantara">24/7</span>
+                  <span className="text-2xl sm:text-3xl font-bold text-vantara">24/7</span>
                 </div>
-                <h4 className="font-bold text-gray-900 mb-2 text-2xl">Always Available</h4>
+                <h4 className="font-bold text-gray-900 mb-2 text-md sm:text-2xl">Always Available</h4>
                 <p className="text-gray-600 text-sm">
                   Round-the-clock support for your peace of mind
                 </p>
               </div>
               <div className="text-center md:px-6">
                 <div className="w-20 h-20 bg-vantara/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-3xl font-bold text-vantara">0</span>
+                  <span className="text-2xl sm:text-3xl font-bold text-vantara">0</span>
                 </div>
-                <h4 className="font-bold text-gray-900 mb-2 text-2xl">Zero Disruption</h4>
+                <h4 className="font-bold text-gray-900 mb-2 text-md sm:text-2xl">Zero Disruption</h4>
                 <p className="text-gray-600 text-sm">
                   Seamless implementation without affecting your operations
                 </p>

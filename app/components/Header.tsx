@@ -121,12 +121,6 @@ export default function Header() {
                           </div>
                         ))}
                       </div>
-                      <div className="mt-4 pt-4 border-t border-white/10">
-                        <Link href="/services" className="inline-flex items-center text-sm font-medium text-vantara-light hover:text-white transition-colors">
-                          View All Services
-                          <FiChevronDown className="w-4 h-4 ml-1 rotate-[-90deg]" />
-                        </Link>
-                      </div>
                     </div>
                     
                     {/* Right side - Image */}
@@ -153,17 +147,13 @@ export default function Header() {
 
           {/* CTA Button */}
           <div className="hidden md:flex items-center space-x-4">
-            <MovingBorderButton
-              borderRadius="0.5rem"
-              className="bg-gradient-to-r from-black to-vantara text-white font-normal hover:from-gray-900 hover:to-vantara-light transition-all duration-200"
-              as="a"
+            <a
               href="tel:+918446317126"
+              className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-2.5 rounded-lg font-semibold transition-all duration-200"
             >
-              <div className="flex items-center gap-2 px-6 py-2.5">
-                <FiPhone className="w-4 h-4" />
-                +91 84463 17126
-              </div>
-            </MovingBorderButton>
+              <FiPhone className="w-4 h-4" />
+              +91 84463 17126
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -179,9 +169,13 @@ export default function Header() {
         </div>
 
         {/* Mobile Navigation */}
-        {mobileMenuOpen && (
-          <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 bg-gray-900/95 backdrop-blur-md border-t border-white/10">
+        <div className={`md:hidden fixed inset-0 top-20 z-40 transition-all duration-300 ease-in-out ${
+          mobileMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
+        }`}>
+          <div className={`h-full bg-gradient-to-b from-black via-gray-900 to-black backdrop-blur-md overflow-y-auto transition-transform duration-300 ease-in-out ${
+            mobileMenuOpen ? 'translate-x-0' : '-translate-x-full'
+          }`}>
+            <div className="px-6 pt-6 pb-3 space-y-2">
               <Link href="/" className="block px-3 py-2 text-white hover:text-vantara-light transition-colors" onClick={() => setMobileMenuOpen(false)}>
                 Home
               </Link>
@@ -239,7 +233,7 @@ export default function Header() {
               </div>
             </div>
           </div>
-        )}
+        </div>
       </div>
     </nav>
   )

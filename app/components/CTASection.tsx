@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { ArrowRight } from 'lucide-react'
 
 export default function CTASection() {
   return (
@@ -26,30 +27,13 @@ export default function CTASection() {
             <div className="flex flex-row gap-2 justify-center md:justify-start">
   <Link 
     href="/contact" 
-    className="
-      bg-white text-vantara 
-      px-4 py-2       /* smaller for mobile */
-      rounded-full font-bold text-base /* smaller font for mobile */
-      shadow-xl hover:shadow-2xl 
-      transform hover:scale-105 transition-all duration-300
-      md:px-8 md:py-4 md:text-lg       /* larger on md+ screens */
-    "
+    className="group/btn inline-flex items-center justify-center gap-2 bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-700 hover:to-blue-600 text-white px-6 md:px-8 py-3 md:py-4 rounded-lg font-semibold text-base md:text-lg transition-all duration-300 shadow-lg hover:shadow-blue-500/50 transform hover:scale-105"
   >
     Get Started Today
+    <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover/btn:translate-x-1" />
   </Link>
 
-  <Link 
-    href="/services" 
-    className="
-      bg-transparent border-2 border-white text-white 
-      px-4 py-2       
-      rounded-full font-bold text-base 
-      hover:bg-white hover:text-vantara transition-all duration-300
-      md:px-8 md:py-4 md:text-lg      
-    "
-  >
-    View Our Services
-  </Link>
+
 </div>
 
           </div>
