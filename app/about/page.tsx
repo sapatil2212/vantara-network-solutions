@@ -21,7 +21,7 @@ export default function AboutPage() {
         <section 
           className="relative text-white pt-28 pb-16 md:pt-32 md:pb-20"
           style={{
-            backgroundImage: 'url(/images/hero/hero-bg.jpg)',
+            backgroundImage: 'url(/images/network-data-structure.jpg)',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
           }}

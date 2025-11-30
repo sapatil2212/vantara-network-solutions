@@ -133,9 +133,9 @@ export default function Footer() {
               <li className="flex items-start space-x-2">
                 <FiMapPin className="w-4 h-4 mt-1 flex-shrink-0" />
                 <span className="text-gray-300">
-                  301, 3rd Floor, Sai Platinum, CTS 559,<br />
-                  Laxmi Road, Sadashiv Peth<br />
-                  Pune - 411030
+                  Sai Platinum Building<br />
+                  301, 3rd floor, Laxmi road<br />
+                  Opp to Jyoti Gas appliances
                 </span>
               </li>
               

@@ -7,7 +7,7 @@ import { MapPin, Phone, Mail } from 'lucide-react'
 const COMPANY_INFO = {
   phone: '+91 84463 17126',
   email: 'vantaranet@gmail.com',
-  address: '301, 3rd Floor, Sai Platinum, CTS 559, Laxmi Road, Sadashiv Peth Pune - 411030',
+  address: 'Sai Platinum Building, 301, 3rd floor, Laxmi road, Opp to Jyoti Gas appliances',
   whatsapp: '+91 84463 17126'
 }
 
@@ -75,17 +75,10 @@ export default function ContactPage() {
               transition={{ duration: 0.8, delay: 0.3 }}
             >
               <div className="border border-gray-200 rounded-xl overflow-hidden bg-white">
-                {/* Map Section - Placeholder for Google Maps */}
-                <div className="h-64 md:h-80 bg-gray-100 flex items-center justify-center">
-                  {/* Replace this div with your Google Maps iframe */}
-                  <div className="text-center text-gray-500">
-                    <MapPin className="h-12 w-12 mx-auto mb-2 text-gray-400" />
-                    <p className="text-sm">Map will be displayed here</p>
-                    <p className="text-xs mt-1">Add your Google Maps embed code</p>
-                  </div>
-                  {/* Example Google Maps iframe (uncomment and add your embed URL):
+                {/* Map Section - Google Maps */}
+                <div className="h-64 md:h-80 bg-gray-100">
                   <iframe 
-                    src="YOUR_GOOGLE_MAPS_EMBED_URL" 
+                    src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3783.331076438922!2d73.84537127519145!3d18.513935082578346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTjCsDMwJzUwLjIiTiA3M8KwNTAnNTIuNiJF!5e0!3m2!1sen!2sin!4v1764414838572!5m2!1sen!2sin" 
                     width="100%" 
                     height="100%" 
                     style={{border: 0}} 
@@ -93,7 +86,6 @@ export default function ContactPage() {
                     loading="lazy" 
                     referrerPolicy="no-referrer-when-downgrade"
                   />
-                  */}
                 </div>
                 
                 {/* Contact Information Section */}
